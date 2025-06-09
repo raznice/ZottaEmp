@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ZottaEmp</Name>
+    <RootNamespace>ZottaEmp</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <SaveNodeJsSettingsInProjectFile>False</SaveNodeJsSettingsInProjectFile>
+    <TypeScriptBuildMode>true</TypeScriptBuildMode>
+    <LaunchUrl>
+    </LaunchUrl>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>952676ad-8abd-4cba-931f-026108dfbaea</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>
+    </NodejsPort>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptToolsVersion>4.9</TypeScriptToolsVersion>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".next\server\app-paths-manifest.json" />
+    <Content Include=".next\server\app\admin\dashboard.html" />
+    <Content Include=".next\server\app\admin\dashboard.meta" />
+    <Content Include=".next\server\app\admin\dashboard.rsc" />
+    <Content Include=".next\server\app\admin\dashboard\page.js.nft.json" />
+    <Content Include=".next\server\app\employee\dashboard.html" />
+    <Content Include=".next\server\app\employee\dashboard.meta" />
+    <Content Include=".next\server\app\employee\dashboard.rsc" />
+    <Content Include=".next\server\app\employee\dashboard\page.js.nft.json" />
+    <Content Include=".next\server\app\en.html" />
+    <Content Include=".next\server\app\en.meta" />
+    <Content Include=".next\server\app\en.rsc" />
+    <Content Include=".next\server\app\en\admin\dashboard.html" />
+    <Content Include=".next\server\app\en\admin\dashboard.meta" />
+    <Content Include=".next\server\app\en\admin\dashboard.rsc" />
+    <Content Include=".next\server\app\en\employee\dashboard.html" />
+    <Content Include=".next\server\app\en\employee\dashboard.meta" />
+    <Content Include=".next\server\app\en\employee\dashboard.rsc" />
+    <Content Include=".next\server\app\index.html" />
+    <Content Include=".next\server\app\index.meta" />
+    <Content Include=".next\server\app\index.rsc" />
+    <Content Include=".next\server\app\it.html" />
+    <Content Include=".next\server\app\it.meta" />
+    <Content Include=".next\server\app\it.rsc" />
+    <Content Include=".next\server\app\it\admin\dashboard.html" />
+    <Content Include=".next\server\app\it\admin\dashboard.meta" />
+    <Content Include=".next\server\app\it\admin\dashboard.rsc" />
+    <Content Include=".next\server\app\it\employee\dashboard.html" />
+    <Content Include=".next\server\app\it\employee\dashboard.meta" />
+    <Content Include=".next\server\app\it\employee\dashboard.rsc" />
+    <Content Include=".next\server\app\page.js.nft.json" />
+    <Content Include=".next\server\app\[locale]\admin\dashboard\page.js.nft.json" />
+    <Content Include=".next\server\app\[locale]\employee\dashboard\page.js.nft.json" />
+    <Content Include=".next\server\app\[locale]\page.js.nft.json" />
+    <Content Include=".next\server\app\_not-found.html" />
+    <Content Include=".next\server\app\_not-found.meta" />
+    <Content Include=".next\server\app\_not-found.rsc" />
+    <Content Include=".next\server\app\_not-found\page.js.nft.json" />
+    <Content Include=".next\server\functions-config-manifest.json" />
+    <Content Include=".next\server\middleware-manifest.json" />
+    <Content Include=".next\server\next-font-manifest.json" />
+    <Content Include=".next\server\pages-manifest.json" />
+    <Content Include=".next\server\pages\404.html" />
+    <Content Include=".next\server\pages\500.html" />
+    <Content Include=".next\server\pages\_app.js.nft.json" />
+    <Content Include=".next\server\pages\_document.js.nft.json" />
+    <Content Include=".next\server\pages\_error.js.nft.json" />
+    <Content Include=".next\server\server-reference-manifest.json" />
+    <Content Include=".next\static\css\app\layout.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include=".next\static\css\e5dab2909e22b1c8.css" />
+    <Content Include=".vscode\launch.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include=".vscode\settings.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="libman.json" />
+    <Content Include="src\app\globals.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\locales\en\common.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\locales\it\common.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="work-entries.data">
+      <SubType>Code</SubType>
+    </Content>
+    <TypeScriptCompile Include="middleware.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="next.config.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <Content Include="tsconfig.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <TypeScriptCompile Include="src\app\admin\dashboard\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\ai\dev.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\ai\flows\summerize-daily-activities.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\ai\genkit.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\employee\dashboard\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\layout.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\[locale]\admin\dashboard\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\[locale]\employee\dashboard\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\[locale]\layout.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\[locale]\page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\admin\admin-profile-settings.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\admin\employee-data-view.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\admin\employee-form.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\admin\employee-management-table.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\admin\employee-profile-settings.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\auth\login-form.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\auth\login-view.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\employee\employee-dashboard-client-page.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\accordion.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\alert-dialog.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\alert.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\layout\app-header.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\layout\app-layout.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\layout\app-sidebar.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\avatar.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\badge.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\button.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\calendar.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\card.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\chart.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\checkbox.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\dialog.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\dropdown-menu.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\form.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\input.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\label.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\layout\language-switcher.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\menubar.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\popover.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\progress.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\radio-group.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\scroll-area.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\select.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\separator.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\sheet.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\sidebar.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\skeleton.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\slider.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\switch.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\table.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\tabs.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\textarea.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\employee\time-tracker.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\toast.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\toaster.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\ui\tooltip.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\components\employee\work-history.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\hooks\use-mobile.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\hooks\use-toast.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\actions.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\auth.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\getDictionary.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\types.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\utils.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\providers\auth-provider.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="tailwind.config.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".next\" />
+    <Folder Include=".next\server\" />
+    <Folder Include=".next\server\app\" />
+    <Folder Include=".next\server\app\admin\" />
+    <Folder Include=".next\server\app\admin\dashboard\" />
+    <Folder Include=".next\server\app\employee\" />
+    <Folder Include=".next\server\app\employee\dashboard\" />
+    <Folder Include=".next\server\app\en\" />
+    <Folder Include=".next\server\app\en\admin\" />
+    <Folder Include=".next\server\app\en\employee\" />
+    <Folder Include=".next\server\app\it\" />
+    <Folder Include=".next\server\app\it\admin\" />
+    <Folder Include=".next\server\app\it\employee\" />
+    <Folder Include=".next\server\app\[locale]\" />
+    <Folder Include=".next\server\app\[locale]\admin\" />
+    <Folder Include=".next\server\app\[locale]\admin\dashboard\" />
+    <Folder Include=".next\server\app\[locale]\employee\" />
+    <Folder Include=".next\server\app\[locale]\employee\dashboard\" />
+    <Folder Include=".next\server\app\_not-found\" />
+    <Folder Include=".next\server\chunks\" />
+    <Folder Include=".next\server\vender-chunks\" />
+    <Folder Include=".next\server\pages\" />
+    <Folder Include=".next\static\" />
+    <Folder Include=".next\static\chunks\" />
+    <Folder Include=".next\static\chunks\app\" />
+    <Folder Include=".next\static\chunks\app\admin\" />
+    <Folder Include=".next\static\chunks\app\admin\dashboard\" />
+    <Folder Include=".next\static\chunks\app\employee\" />
+    <Folder Include=".next\static\chunks\app\employee\dashboard\" />
+    <Folder Include=".next\static\chunks\app\[locale]\" />
+    <Folder Include=".next\static\chunks\app\[locale]\admin\" />
+    <Folder Include=".next\static\chunks\app\[locale]\admin\dashboard\" />
+    <Folder Include=".next\static\chunks\app\[locale]\employee\" />
+    <Folder Include=".next\static\chunks\app\[locale]\employee\dashboard\" />
+    <Folder Include=".next\static\chunks\app\_not-found\" />
+    <Folder Include=".next\static\chunks\pages\" />
+    <Folder Include=".next\static\css\" />
+    <Folder Include=".next\static\css\app\" />
+    <Folder Include=".vscode\" />
+    <Folder Include=".env\" />
+    <Folder Include="src\" />
+    <Folder Include="src\app\admin\dashboard\" />
+    <Folder Include="src\app\ai\flows\" />
+    <Folder Include="src\app\employee\" />
+    <Folder Include="src\app\employee\dashboard\" />
+    <Folder Include="src\app\admin\" />
+    <Folder Include="src\app\ai\" />
+    <Folder Include="src\app\[locale]\" />
+    <Folder Include="src\app\[locale]\admin\dashboard\" />
+    <Folder Include="src\app\[locale]\employee\" />
+    <Folder Include="src\app\[locale]\employee\dashboard\" />
+    <Folder Include="src\app\[locale]\admin\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\layout\" />
+    <Folder Include="src\components\auth\" />
+    <Folder Include="src\components\employee\" />
+    <Folder Include="src\components\admin\" />
+    <Folder Include="src\components\ui\" />
+    <Folder Include="src\locales\" />
+    <Folder Include="src\locales\it\" />
+    <Folder Include="src\locales\en\" />
+    <Folder Include="src\hooks\" />
+    <Folder Include="src\lib\" />
+    <Folder Include="src\app\" />
+    <Folder Include="src\providers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".next\server\app\employee\dashboard\page.js" />
+    <Compile Include=".next\server\app\employee\dashboard\page_client-reference-manifest.js" />
+    <Compile Include=".next\server\app\page.js" />
+    <Compile Include=".next\server\app\page_client-reference-manifest.js" />
+    <Compile Include=".next\server\app\[locale]\admin\dashboard\page.js" />
+    <Compile Include=".next\server\app\[locale]\admin\dashboard\page_client-reference-manifest.js" />
+    <Compile Include=".next\server\app\[locale]\employee\dashboard\page.js" />
+    <Compile Include=".next\server\app\[locale]\employee\dashboard\page_client-reference-manifest.js" />
+    <Compile Include=".next\server\app\[locale]\page.js" />
+    <Compile Include=".next\server\app\_not-found\page.js" />
+    <Compile Include=".next\server\app\_not-found\page_client-reference-manifest.js" />
+    <Compile Include=".next\server\chunks\124.js" />
+    <Compile Include=".next\server\chunks\212.js" />
+    <Compile Include=".next\server\chunks\295.js" />
+    <Compile Include=".next\server\chunks\425.js" />
+    <Compile Include=".next\server\chunks\478.js" />
+    <Compile Include=".next\server\chunks\548.js" />
+    <Compile Include=".next\server\chunks\911.js" />
+    <Compile Include=".next\server\chunks\938.js" />
+    <Compile Include=".next\server\chunks\956.js" />
+    <Compile Include=".next\server\interception-route-rewrite-manifest.js" />
+    <Compile Include=".next\server\middleware-build-manifest.js" />
+    <Compile Include=".next\server\middleware-react-loadable-manifest.js" />
+    <Compile Include=".next\server\next-font-manifest.js" />
+    <Compile Include=".next\server\pages\_app.js" />
+    <Compile Include=".next\server\pages\_document.js" />
+    <Compile Include=".next\server\pages\_error.js" />
+    <Compile Include=".next\server\server-reference-manifest.js" />
+    <Compile Include=".next\server\vender-chunks\%40redix-ui.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include=".next\server\vender-chunks\lucide-react.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include=".next\server\webpack-runtime.js" />
+    <Compile Include=".next\static\chunks\16-74a805729365c314.js" />
+    <Compile Include=".next\static\chunks\179-460eff4ee54d3590.js" />
+    <Compile Include=".next\static\chunks\341.69dcd56c862b78f7.js" />
+    <Compile Include=".next\static\chunks\472.2c08b965bd9148e2.js" />
+    <Compile Include=".next\static\chunks\4bd1b696-a5409130e0721816.js" />
+    <Compile Include=".next\static\chunks\529-5273abae2a12966f.js" />
+    <Compile Include=".next\static\chunks\556-a28ca6edb6e4932e.js" />
+    <Compile Include=".next\static\chunks\649-791f06476197d3b3.js" />
+    <Compile Include=".next\static\chunks\684-f2a52798ed74de9d.js" />
+    <Compile Include=".next\static\chunks\861-401acfdad1bf8773.js" />
+    <Compile Include=".next\static\chunks\916-8a18a233b57e9448.js" />
+    <Compile Include=".next\static\chunks\932-8ec1df45a73d78e7.js" />
+    <Compile Include=".next\static\chunks\app\admin\dashboard\page-cb7f7e5cc28d1930.js" />
+    <Compile Include=".next\static\chunks\app\employee\dashboard\page-56389801316d0b54.js" />
+    <Compile Include=".next\static\chunks\app\layout-3f17a74b9ae06ba6.js" />
+    <Compile Include=".next\static\chunks\app\layout.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include=".next\static\chunks\app\page-08798b618e83ddbb.js" />
+    <Compile Include=".next\static\chunks\app\[locale]\admin\dashboard\page-365ea1885f592326.js" />
+    <Compile Include=".next\static\chunks\app\[locale]\employee\dashboard\page-fc023e4b98b1d094.js" />
+    <Compile Include=".next\static\chunks\app\[locale]\layout-93a98b29ffe8ad41.js" />
+    <Compile Include=".next\static\chunks\app\[locale]\page-d69df1ab524c6c4a.js" />
+    <Compile Include=".next\static\chunks\app\_not-found\page-7380803792dc7456.js" />
+    <Compile Include=".next\static\chunks\b1644e8c-776727ab0964dbcf.js" />
+    <Compile Include=".next\static\chunks\framework-75d8b6119e7601c4.js" />
+    <Compile Include=".next\static\chunks\main-6e051fdddd16e0f8.js" />
+    <Compile Include=".next\static\chunks\main-app-14764b3fcab92cd0.js" />
+    <Compile Include=".next\static\chunks\pages\_app-8732e664b47e53c0.js" />
+    <Compile Include=".next\static\chunks\pages\_error-36d51395063e10a0.js" />
+    <Compile Include=".next\static\chunks\polyfills-42372ed130431b0a.js" />
+    <Compile Include=".next\static\chunks\webpack-a1f0a1653d24cc70.js" />
+    <Compile Include=".next\static\chunks\webpack.js" />
+    <Compile Include="server - Copy.js" />
+    <Compile Include="server.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
