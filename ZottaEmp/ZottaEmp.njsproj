@@ -461,7 +461,6 @@
     <Compile Include=".next\static\chunks\polyfills-42372ed130431b0a.js" />
     <Compile Include=".next\static\chunks\webpack-a1f0a1653d24cc70.js" />
     <Compile Include=".next\static\chunks\webpack.js" />
-    <Compile Include="server - Copy.js" />
     <Compile Include="server.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

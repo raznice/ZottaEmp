@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # If you're not committing it, though often it's recommended
+
+# Next.js
+ZottaEmp/ZottaEmp/.next/
+ZottaEmp/ZottaEmp/out/
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json # If you want to keep settings.json
+!.vscode/extensions.json # If you use workspace recommendations
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment variables
+.env
+.env*.local
+
+# Logs
+logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
